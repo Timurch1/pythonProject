@@ -1,3 +1,3 @@
-stroka = str(input("Введите строку: "))
-podstroka = set(stroka)
-print("Результат: ", podstroka)
+def find_longest_substring(stroka):
+    podstroka = set(stroka)
+    print("Результат: ", podstroka)
