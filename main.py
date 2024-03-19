@@ -19,3 +19,9 @@ def ilya_solution(value):
         else:
             used_chars.append(value[i])
     return output
+
+
+# Дан отсортированный массив целых чисел nums и число target. Функция должна вернуть индекс
+# числа target в массиве, а если этого числа нет, то индекс предпологаемого места в массиве.
+def search_insert_position(nums, target):
+    pass
