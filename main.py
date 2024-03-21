@@ -1,21 +1,21 @@
-def find_longest_substring(stroka):
-    podstroka = set(stroka)
-    return podstroka
+# Удаление повторяющихся элементов и нахождения числа неповторящихся элементов)
+def to_set(nums: list):
+   nums = set(nums)
+   for i in range(len(nums)):
+       i += 1
+   print("Результат: ", i, end=', ')
+   return nums
+
+it_list = [1, 1, 1, 2, 2, 3, 4, 4, 4, 5, 10, 10, 15, 18, 18, 20]
+print(to_set(it_list))
 
 
-def ilya_solution(value):
-    output = ""
-    max_length = 0
-    used_chars = []
 
-    for i in range(len(value)):
-        if value[i] in used_chars:
-            if len(used_chars) > max_length:
-                max_length = len(used_chars)
-                output = ""
-                for s in used_chars:
-                    output = output + s
-                used_chars.clear()
-        else:
-            used_chars.append(value[i])
-    return output
+
+
+# Нахождение количества символов в строке)
+
+stroka = input("Enter str = ")
+for i in set(stroka):
+    stroka.count(i)
+    print(i,'= is', stroka.count(i))
